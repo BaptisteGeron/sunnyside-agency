@@ -458,7 +458,7 @@ h3 {
 }
 
 h4 {
-  width: 100%;
+  width: calc(100% - 4rem);
   font-family: "Fraunces", sans-serif;
   font-size: 2rem;
   font-weight: 800;

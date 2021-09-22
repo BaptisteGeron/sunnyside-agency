@@ -10,6 +10,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <input type="checkbox" id="myCheck" class="flat" onclick="myFunction()">
+    <img id="hamburger" src="images/ico/icon-hamburger.svg" alt="">
+        <nav id="text" style="display:none">
+        <ul>
+            <li><a class="whitelink" href="">About</a></li>
+            <li><a class="whitelink" href="">Services</a></li>
+            <li><a class="whitelink" href="">Projects</a></li>
+            <li id="contact"><a href="">Contact</a></li>
+        </ul>
+        </nav>
   <header>
     <img id="sunnyset" src="images/logo.svg" alt="logo Sunnyside">
       <nav>
@@ -125,5 +135,16 @@
         Coded by <a href="#">BaptisteGeron</a>.
       </div>
   </footer>
+  <script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+  </script>
 </body>
 </html>

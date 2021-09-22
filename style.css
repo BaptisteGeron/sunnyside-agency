@@ -622,4 +622,46 @@ footer ul li a {
 .attribution a {
   color: #3e52a3;
 }
+
+/*Hamburger menu*/
+#responsivenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  right: 5px;
+  height: auto;
+  width: 90%;
+  z-index: 1;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  background-color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  #responsivenav {
+    display: block;
+  }
+}
+
+input {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  background-color: aliceblue;
+}
+
+#menu {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+input:checked {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */

@@ -660,4 +660,8 @@ input {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
+
+input:checked {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */

@@ -91,10 +91,12 @@ table {
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 1.2rem;
   display: -ms-grid;
   display: grid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: auto;
@@ -138,14 +140,13 @@ main {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "img1" "text1"  "img2" "text2" "imgtext1" "imgtext2" "customer" "img12";
+        grid-template-areas: "img1" "text1" "img2" "text2" "imgtext1" "imgtext2" "customer" "img12";
   }
 }
 
 section {
   width: 1fr;
-  height: 500px;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 #textegg {
@@ -219,7 +220,7 @@ header {
 header h1 {
   font-size: 4rem;
   text-align: center;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-weight: 800;
   color: white;
   margin: auto auto;
@@ -261,7 +262,20 @@ header #sunnyset {
 
 header nav ul li a {
   text-decoration: none;
+}
+
+header .whitelink {
   color: white;
+}
+
+header #contact {
+  background-color: white;
+  border-radius: 5rem;
+  padding: 1rem;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #23303e;
 }
 
 #arrow {
@@ -274,13 +288,8 @@ header nav ul li a {
           justify-content: flex-start;
 }
 
-#contact {
-  background-color: white;
-  color: #23303e;
-}
-
 @media only screen and (max-width: 768px) {
-  nav {
+  header nav {
     display: none;
   }
 }
@@ -288,7 +297,7 @@ header nav ul li a {
 /*titles and text style*/
 h2 {
   width: 70%;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-size: 2rem;
   font-weight: 800;
   color: #23303e;
@@ -297,7 +306,7 @@ h2 {
 
 h3 {
   width: 70%;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   color: #23303e;
@@ -346,7 +355,7 @@ h3 {
 }
 
 .learnmore {
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   color: #23303e;
   font-weight: 800;
   text-transform: uppercase;
@@ -450,7 +459,7 @@ h3 {
 
 h4 {
   width: 100%;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-size: 2rem;
   font-weight: 800;
   color: #a7abae;
@@ -468,6 +477,20 @@ h4 {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .profile {
@@ -507,7 +530,7 @@ h4 {
 }
 
 cite::first-line {
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-size: 1.3rem;
   font-weight: 800;
   color: #23303e;
@@ -516,7 +539,7 @@ cite::first-line {
 /*Footer*/
 footer {
   width: 100%;
-  background-color: #458c7e;
+  background-color: #91d4c7;
 }
 
 footer nav {
@@ -569,7 +592,7 @@ footer #social img {
 
 footer ul li a {
   text-decoration: none;
-  color: #25564b;
+  color: #458c7e;
 }
 
 .attribution {

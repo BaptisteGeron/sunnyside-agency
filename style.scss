@@ -106,13 +106,19 @@ header {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  h1 {
+  #h1arrow{
+      display: flex;
+      flex-direction: column;
+      margin: auto auto;
+  }
+  #h1arrow h1 {
     font-size: 4rem;
     text-align: center;
     font-family: "Fraunces", sans-serif;
     font-weight: 800;
     color: $white;
     margin: auto auto;
+    padding-bottom: 2rem;
   }
   nav {
     display: flex;
@@ -122,6 +128,8 @@ header {
   nav ul {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+
   }
   nav ul li {
     margin: 2rem 3rem;
@@ -217,6 +225,8 @@ h3 {
   text-decoration: underline;
   text-decoration-thickness: 10px;
   color: $very-dark-grayish-blue;
+  align-self: flex-start;
+  margin-left: 20%;
 }
 
 #yellow {
@@ -282,12 +292,13 @@ h3 {
 }
 
 h4 {
-  width: calc(100% - 4rem);
+  width: 100%;
   font-family: "Fraunces", sans-serif;
   font-size: 2rem;
   font-weight: 800;
   color: $grayish-blue;
-  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 .testimonials {
@@ -354,7 +365,8 @@ h4 {
     nav img {
       justify-content: center;
       align-items: center;
-      width: 10%;
+      /*width: 10%;*/
+      height: 3rem;
       margin: 1rem;
       fill: $dark-desaturated-cyan;
     }

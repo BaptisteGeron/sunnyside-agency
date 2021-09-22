@@ -217,13 +217,25 @@ header {
           flex-direction: column;
 }
 
-header h1 {
+header #h1arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto auto;
+}
+
+header #h1arrow h1 {
   font-size: 4rem;
   text-align: center;
   font-family: "Fraunces", sans-serif;
   font-weight: 800;
   color: white;
   margin: auto auto;
+  padding-bottom: 2rem;
 }
 
 header nav {
@@ -247,6 +259,9 @@ header nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 header nav ul li {
@@ -362,6 +377,9 @@ h3 {
   text-decoration: underline;
   text-decoration-thickness: 10px;
   color: #5a636c;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 20%;
 }
 
 #yellow {
@@ -458,12 +476,13 @@ h3 {
 }
 
 h4 {
-  width: calc(100% - 4rem);
+  width: 100%;
   font-family: "Fraunces", sans-serif;
   font-size: 2rem;
   font-weight: 800;
   color: #a7abae;
-  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 
@@ -571,7 +590,8 @@ footer nav img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 10%;
+  /*width: 10%;*/
+  height: 3rem;
   margin: 1rem;
   fill: #25564b;
 }

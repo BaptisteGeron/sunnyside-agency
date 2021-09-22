@@ -396,39 +396,48 @@ h4 {
     color: hsl(228, 45%, 44%);
   }
 
-/*Hamburger menu*/
-#responsivenav {
-    display: flex;
+  /*Hamburger menu*/
+  #myCheck {
+    display: none;
     position: absolute;
-    opacity: 0;
-    top: 5px;
-    right: 5px;
-    height: auto;
-    width: 90%;
-    z-index: 1;
-    padding-bottom: 3rem;
-    padding-left: 1rem;
-    background-color: aliceblue;
-}
-@media (max-width: 768px) {
-    #responsivenav {
-        display:block;
-    }
-}
-input {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+    z-index: 4;
+    top: 10px;
+    right: 10px;
     height: 50px;
     width: 50px;
-    z-index: 1;
-    background-color: aliceblue;
-}
+    opacity: 0;
+  }
+  #hamburger {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+  }
 
-#menu {
-align-self: flex-start;
-
-}
-input:checked {
-  opacity: 1;
-}
+  #text {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.74);
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    ul li a{
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: black;
+      line-height: 1.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    #myCheck {
+      display: block;
+    }
+    #hamburger {
+      display: block;
+    }
+  }

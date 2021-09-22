@@ -379,7 +379,7 @@ h3 {
   color: #5a636c;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 #yellow {
@@ -576,8 +576,8 @@ footer nav {
 
 footer nav ul li {
   display: inline-block;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
   color: white;
@@ -590,7 +590,6 @@ footer nav img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*width: 10%;*/
   height: 3rem;
   margin: 1rem;
   fill: #25564b;
@@ -604,8 +603,8 @@ footer #social {
 footer #social img {
   height: 2rem;
   width: auto;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }

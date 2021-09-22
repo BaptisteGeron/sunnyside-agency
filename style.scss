@@ -226,7 +226,7 @@ h3 {
   text-decoration-thickness: 10px;
   color: $very-dark-grayish-blue;
   align-self: flex-start;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 #yellow {
@@ -356,8 +356,8 @@ h4 {
     }
     nav ul li {
       display: inline-block;
-      margin-left: 3rem;
-      margin-right: 3rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
       margin-top: 1rem;
       margin-bottom: 3rem;
       color: $white;
@@ -365,7 +365,6 @@ h4 {
     nav img {
       justify-content: center;
       align-items: center;
-      /*width: 10%;*/
       height: 3rem;
       margin: 1rem;
       fill: $dark-desaturated-cyan;
@@ -377,8 +376,8 @@ h4 {
     #social img {
       height: 2rem;
       width: auto;
-      margin-left: 3rem;
-      margin-right: 3rem;
+      margin-left: 5%;
+      margin-right: 5%;
       margin-top: 1rem;
       margin-bottom: 3rem;
     }

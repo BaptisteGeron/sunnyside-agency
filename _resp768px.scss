@@ -1,0 +1,27 @@
+@media only screen and (max-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        grid-template-areas: 
+        "img1"
+        "text1" 
+        "img2"
+        "text2"
+        "imgtext1"
+        "imgtext2"
+        "customer"
+        "img12"
+        ;
+    } 
+    .testimonials {
+        display:flex;
+        flex-direction: column;
+     }
+     .customer {
+         width: 100%;
+     }
+     #gallery {
+         flex-direction: column;
+     }
+}
